@@ -1,0 +1,164 @@
+#******************* Question - :plot-4: 12-15 (2007-2010) :  ********************
+
+
+
+df2 = df[df.Period == 2008]
+print("\n\n--------------[ OUTPUT for 2008 ]----------------------\n\n")
+print(df2[['Location','Period','First Tooltip']])
+
+df3 = df[df.Period == 2009]
+print("\n\n--------------[ OUTPUT for 2009 ]----------------------\n\n")
+print(df3[['Location','Period','First Tooltip']])
+
+df4 = df[df.Period == 2010]
+print("\n\n--------------[ OUTPUT for 2010 ]----------------------\n\n")
+print(df4[['Location','Period','First Tooltip']])
+
+
+
+i1 = np.arange(len(df2['Location']))
+print(i1)
+
+i2 = np.arange(len(df3['Location']))
+print(i2)
+
+i3 = np.arange(len(df4['Location']))
+print(i3)
+
+#--------------- plot ----------------------
+
+plt.title('Question - : slot-4 : 2008-2010')
+plt.xlabel("Country sl. no --- >")
+plt.ylabel("Number(%) --- >")
+
+
+plt.plot(i1,df2['First Tooltip'],
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="[2] 2008")
+
+plt.plot(i2,df3['First Tooltip'],
+            marker='+',
+            markersize=10,
+            linestyle='dashed',
+            label="[3] 2009")
+
+plt.plot(i3,df4['First Tooltip'],
+            marker='o',
+            markersize=10,
+            linestyle='dashed',
+            label="[4] 2010")
+
+plt.legend()
+plt.show()
+
+
+--------------[ OUTPUT for 2008 ]----------------------
+
+
+                     Location  Period  First Tooltip
+48                  Australia    2008             91
+74                    Bahrain    2008             14
+169                    Canada    2008             42
+331                   Germany    2008             68
+419                     Italy    2008             60
+459                    Kuwait    2008             99
+504                Luxembourg    2008             86
+555                    Mexico    2008             14
+650                    Norway    2008             86
+677                     Palau    2008              7
+839                    Sweden    2008             60
+850               Switzerland    2008             13
+912  United States of America    2008             93
+
+
+--------------[ OUTPUT for 2009 ]----------------------
+
+
+                     Location  Period  First Tooltip
+47                  Australia    2009             91
+63                    Bahamas    2009              3
+73                    Bahrain    2009             96
+88                   Barbados    2009             75
+168                    Canada    2009             50
+211                Costa Rica    2009             48
+238                   Denmark    2009             86
+330                   Germany    2009             84
+418                     Italy    2009             66
+458                    Kuwait    2009             99
+503                Luxembourg    2009             86
+535          Marshall Islands    2009             49
+554                    Mexico    2009             46
+602               Netherlands    2009             96
+612               New Zealand    2009             87
+639                      Niue    2009             99
+649                    Norway    2009             91
+660                      Oman    2009             96
+676                     Palau    2009             18
+707                      Peru    2009              9
+726                     Qatar    2009             99
+767              Saudi Arabia    2009             98
+792                 Singapore    2009             17
+802                  Slovakia    2009             99
+820              South Africa    2009             10
+838                    Sweden    2009             98
+849               Switzerland    2009             25
+872                    Turkey    2009             97
+911  United States of America    2009             93
+
+
+--------------[ OUTPUT for 2010 ]----------------------
+
+
+                                              Location  Period  First Tooltip
+46                                           Australia    2010             91
+62                                             Bahamas    2010              1
+72                                             Bahrain    2010             99
+87                                            Barbados    2010             78
+124                                             Brazil    2010             24
+133                                           Bulgaria    2010             69
+167                                             Canada    2010             58
+194                                           Colombia    2010             22
+210                                         Costa Rica    2010             94
+237                                            Denmark    2010             88
+258                                            Ecuador    2010             17
+267                                        El Salvador    2010             69
+298                                            Finland    2010             92
+307                                             France    2010             89
+316                                             Gambia    2010             99
+329                                            Germany    2010             85
+400                                            Ireland    2010             43
+417                                              Italy    2010             71
+457                                             Kuwait    2010             98
+502                                         Luxembourg    2010             86
+534                                   Marshall Islands    2010             24
+553                                             Mexico    2010             92
+564                   Micronesia (Federated States of)    2010             70
+575                                            Morocco    2010              1
+601                                        Netherlands    2010             96
+611                                        New Zealand    2010             89
+638                                               Niue    2010             99
+648                                             Norway    2010             91
+659                                               Oman    2010             99
+675                                              Palau    2010             45
+686                                             Panama    2010             48
+706                                               Peru    2010             83
+725                                              Qatar    2010             97
+748                                             Rwanda    2010             97
+766                                       Saudi Arabia    2010             98
+791                                          Singapore    2010             22
+801                                           Slovakia    2010             99
+819                                       South Africa    2010             58
+837                                             Sweden    2010             98
+848                                        Switzerland    2010             37
+871                                             Turkey    2010             93
+886                               United Arab Emirates    2010             94
+895  United Kingdom of Great Britain and Northern I...    2010             89
+910                           United States of America    2010             93
+921                                            Uruguay    2010             91
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12]
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+ 25 26 27 28]
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+ 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44]
