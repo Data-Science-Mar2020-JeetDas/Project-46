@@ -1,0 +1,22 @@
+
+# -*- coding: utf-8 -*-
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import random
+import pandas
+
+
+df = pd.read_csv("C:/Users/Jeet Das/Desktop/46.csv",encoding="utf-8")
+
+print("\n----------------------- output data :---------------------\n")
+print("Project - 46 ");
+print("\n------------------------------------------------------------\n")
+
+----------------------- output data :---------------------
+
+Project - 46 
+
+------------------------------------------------------------
+
